@@ -1,0 +1,1 @@
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .config/npm/node_global/bin/lt","time":"2023-05-22T15:11:14Z"}
