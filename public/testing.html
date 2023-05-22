@@ -1,0 +1,14 @@
+<iframe id="hello2" hidden src="https://example.net"></iframe>
+<script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index&amp;tabs-uv.js"></script>
+<script>
+  let hello = "https://dvtx.net.eu.org/service/" + __uv$config.decodeUrl("https://whatismyaddress.net/")
+  document.getElementById("hello2").src = hello
+</script>
+<script>
+  setTimeout(() => {
+  alert(document.getElementById("hello2").contentWindow.document.getElementById('address').innerHTML)
+}, 10000);
+
+</script>
